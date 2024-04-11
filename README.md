@@ -22,4 +22,12 @@ This repository contains two main directories :
       Tensorflow.
       Adverserial-Robustness-Toolbox.
 
+
+*****************Datasets***********************
+Three datasets are required to evaluate these experiments : 
+1) Adult-Census-Income
+2) Compas-Risk-Recidivism
+3) FairFace
+
+
        
