@@ -1,10 +1,10 @@
 This directory contains the implementation of enhanced membership attack presented at section 5.1.
 
-FairGan.py and model_cond.py are the implementations of the biased data generation with the parameter lambda.
+FairGan.py and model_cond.py are the implementations of the parametrically biased data generation with the parameter lambda.
 /Synthetic_data directory will contain all synthetic data generated via FairGan at several training checkpoints (every 200 epochs)
-automated_test.sh lauches the training of the Synthetizer.
+automated_test.sh lauches the training, of the Synthetizer, and data generation.
 
-membership_attack.py implements the membership attack using Adverserial-robustness toolbox functions. Shadow models training's data is provided from the synthetic_data/ directory. Several datasets are tested for the shadow models training. Attack performances are then stored in text files, along with the fairness of the shadow models, and their proximity to the fairness of the target classifier, showing better attack accuracy when the average fairness of the shadow models is close to the fainress of the target classifier. This follows-up on the observation of Shokri et al. that the better the shadow models imitate the target model, the better the attack performance will be. We extend the imitation to the fairness.
+membership_attack.py implements the membership attack using Adverserial-robustness toolbox functions. Shadow models training's data is provided from the synthetic_data/ directory. Several datasets are tested for the shadow models training. Attack performances are then stored in log (text) files, along with the fairness of the shadow models, and their proximity to the fairness of the target classifier's fairness, showing better attack accuracies when the average fairness of the shadow models is close to the fairness of the target classifier. Hence, confirming the observation of Shokri et al. that the better the shadow models imitate the target model, the better the attack performance will be. We extend the imitation to the fairness.
 
 Correlation_heatmaps.py implements Pearson's correaltion heatmap between data features of the synthetic datasets, in order to help visualize data unfairness.
 
