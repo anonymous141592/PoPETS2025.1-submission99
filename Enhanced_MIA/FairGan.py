@@ -24,7 +24,7 @@ g_loss = []
 g_loss2 = []
 
 model_directory_path = './training_checkpoints_gan_cond'
-data_directory_path = 'new_tests5/checkpoint_samples_gan_eps='+str(_lambda_)
+data_directory_path = 'synthetic_data/checkpoint_samples_gan_eps='+str(_lambda_)
 
 if not os.path.exists(model_directory_path):
     os.makedirs(model_directory_path)
