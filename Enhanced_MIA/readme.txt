@@ -8,6 +8,8 @@ membership_attack.py implements the membership attack using Adverserial-robustne
 
 Correlation_heatmaps.py implements Pearson's correaltion heatmap between data features of the synthetic datasets, in order to help visualize data unfairness.
 
+MIA_plots.py contains vectors of sample results obtained from previous runs. And a plotting method.
+
 ------------------------------------------------Choice of lambda---------------------------------------------------------
 The FairGan architecture's goal is to debias the data. That is, create data-records with minimal disparate impact, and disparate treatment. For this purpose a second discriminator is integrated to the architecure. This second discriminator acts as fairness discriminator that predicts the sensitive attribute from a the non-sensitive ones. Therefore, the generator must produce samples where the sensitive attribute cannot be predicted from the non-sensitive ones. The loss of this second discriminator is scaled by a value lambda that gives "strength" (or not) to this second criteria. lambda = 0 is equivalent to a regular GAN (not a fair one). Higher values of indicate higher importance of the fairness constraint. 
 
