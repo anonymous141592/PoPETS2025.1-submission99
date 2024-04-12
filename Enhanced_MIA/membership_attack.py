@@ -251,7 +251,7 @@ if __name__ == '__main__':
     #Apply the attack on the model.
     for epoch in [800, 1000, 1200, 1400, 1600, 1800, 2000, 2200, 2600] :
         for lmbd in [0.0, 0.1, 0.2, 0.3, 0.4, 0.5, 1.0, 1.1, 1.2, 1.3, 1.4, 1.5, 1.6, 1.7] :
-            dataset_path = 'new_tests5/checkpoint_samples_gan_eps='+str(lmbd)+'/epoch='+str(epoch)+'.csv'
+            dataset_path = 'synthetic_data/checkpoint_samples_gan_eps='+str(lmbd)+'/epoch='+str(epoch)+'.csv'
             shadow_attack_data = pd.read_csv(dataset_path)
             y_shadow = shadow_attack_data['income']
             x_shadow = shadow_attack_data.drop('income', axis=1)
