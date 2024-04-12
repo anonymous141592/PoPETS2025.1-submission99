@@ -14,6 +14,7 @@ This repository contains two main directories :
     -Dependencies :
        Numpy.
        Panda.
+       Sklearn
        Tensorflow.
        Lattigo homomorphic library.
        
