@@ -141,7 +141,7 @@ func main() {
   n_clients := 3
   n_layers := 3
   for ;; {
-    files,_ := ioutil.ReadDir("../../../SEALDEMO/SharedFiles/Fairness_Metrics")
+    files,_ := ioutil.ReadDir("SharedFiles/Fairness_Metrics")
     num_of_files := len(files)
     if num_of_files != n_clients {
       fmt.Println("Waiting for clients to finish training ... ", num_of_files, "/", n_clients)
