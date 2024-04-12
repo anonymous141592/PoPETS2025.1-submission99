@@ -25,6 +25,7 @@ This repository contains two main directories :
     -Dependencies :
       Numpy.
       Panda.
+      Sklearn
       Tensorflow.
       Adverserial-Robustness-Toolbox.
 
