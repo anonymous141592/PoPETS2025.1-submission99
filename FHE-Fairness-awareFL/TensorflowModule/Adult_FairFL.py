@@ -309,7 +309,7 @@ if __name__ == '__main__':
     #Number of FL clients / iterations / epochs
     learning_iterations = 300
     n_clients = 10
-    epochs = 120
+    epochs = 10
     # Fairness Budget
     beta = 1.5
     aggregation_error_analysis = True
